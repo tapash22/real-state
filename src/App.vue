@@ -2,13 +2,18 @@
   <v-app>
     <TheNavigation />
     <v-main>
-      <router-view/>
+      <Home />
+      <Project />
+      <!-- <router-view/> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
 import TheNavigation from '@/components/TheNavigation.vue';
+import Home from '@/views/HomeView.vue';
+import Project from '@/views/Project.vue';
+
 
 export default {
   name: 'App',
@@ -19,6 +24,8 @@ export default {
 
   components:{
     TheNavigation,
+    Home,
+    Project,
   }
 };
 </script>

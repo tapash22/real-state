@@ -1,8 +1,9 @@
 <template>
 <div class="reviews">
     <v-container>
+        <h2>Google Reviews</h2>
         <div class="box">
-            <v-card  v-for="card in cards" :key="card.id" elevation="4" class="pa-2 mx-2" rounded="lg" width="250">
+            <v-card  v-for="card in cards" :key="card.id" elevation="4" class="pa-2 mx-2" rounded="lg" width="300">
                 <v-card-text class="pa-0" >
                     <v-list class="d-flex justify-space-around">
                         <v-list-item-avatar size="42" color="red" class="d-flex justify-center">
@@ -14,7 +15,7 @@
                         </v-list-item-content>
                     </v-list>
                 </v-card-text>
-                <v-card-text class="pa-2 text-body-2 text-justify">
+                <v-card-text class="pa-1 text-body-2 text-justify">
                     {{card.text}}
                 </v-card-text>
             </v-card>
@@ -53,6 +54,13 @@ export default {
 </script>
 
 <style scoped>
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px;
+}
 .box {
     display: flex;
     justify-content: center;

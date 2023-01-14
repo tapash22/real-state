@@ -49,7 +49,7 @@ export default {
 
     data(){
       return{
-        lists:['facebook','facebook','facebook']
+        lists:['facebook','linkedin','twitter']
       }
     },
 

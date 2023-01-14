@@ -4,6 +4,8 @@
     <v-main>
       <Home />
       <Project />
+      <Approved />
+      <Reviews />
       <!-- <router-view/> -->
     </v-main>
   </v-app>
@@ -13,6 +15,8 @@
 import TheNavigation from '@/components/TheNavigation.vue';
 import Home from '@/views/HomeView.vue';
 import Project from '@/views/Project.vue';
+import Approved from '@/views/Approved.vue';
+import Reviews from '@/views/Reviews.vue';
 
 
 export default {
@@ -26,6 +30,8 @@ export default {
     TheNavigation,
     Home,
     Project,
+    Approved,
+    Reviews
   }
 };
 </script>

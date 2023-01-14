@@ -1,6 +1,6 @@
 <template>
 <div class="news-letter">
-    <v-container>
+    <v-container class="my-3">
         <h2>NewsLetters login</h2>
         <div class="box">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime reprehenderit a, repudiandae architecto repellat doloremque obcaecati aliquam eaque! Natus?</p>

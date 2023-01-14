@@ -8,7 +8,7 @@
         <div class="form">
             <div class="box2">
                 <v-text-field v-model="text" outlined dense hide-details />
-                <v-btn large color="primary">send</v-btn>
+                <v-btn class="btn" large color="primary">send</v-btn>
             </div>
         </div>
 
@@ -40,7 +40,8 @@ h2 {
     padding: 0;
     margin: 0;
 }
-.form{
+
+.form {
     display: flex;
     justify-content: center;
 }
@@ -50,5 +51,23 @@ h2 {
     justify-content: stretch;
     width: 50%;
     margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form .box2 {
+        display: block;
+        justify-content: stretch;
+        width: 70%;
+        margin-top: 5px;
+    }
+     .form .box2 .btn{
+        margin-left: 30%;
+        padding: 5px;
+     }
 }
 </style>

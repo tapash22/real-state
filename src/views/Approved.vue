@@ -1,8 +1,8 @@
 <template>
 <div class="approved">
     <h2>Proudly Underwritten By</h2>
-    <div class="box" >
-        <div class="card" v-for="card in cards" :key="card.id" >
+    <div class="box">
+        <div class="card" v-for="card in cards" :key="card.id">
             <img :src="card.img" />
         </div>
     </div>
@@ -44,27 +44,43 @@ export default {
 h2 {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     padding: 20px;
 }
 
 .box {
-    background: rgba(215, 215, 215,0.5);
+    background: rgba(215, 215, 215, 0.5);
     opacity: 0.7;
     display: flex;
     justify-content: center;
-    padding:10px;
+    padding: 10px;
 }
-.box .card{
+
+.box .card {
     padding: 10px;
 
 }
-.box .card img{
+
+.box .card img {
     border-radius: 10%;
     width: 150px;
     height: 100px;
-        border: 2px solid greenyellow;
-        box-shadow:  0 0 10px greenyellow;
+    border: 2px solid greenyellow;
+    box-shadow: 0 0 10px greenyellow;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .box {
+        background: rgba(215, 215, 215, 0.5);
+        opacity: 0.7;
+        display: block;
+        padding: 10px;
+    }
+    .box .card{
+        display: flex;
+        justify-content: center;
+    }
 }
 </style>

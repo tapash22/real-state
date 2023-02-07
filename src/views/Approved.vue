@@ -3,8 +3,8 @@
     <v-container >
         <h2 class="text-h6 font-weight-bold d-flex justify-center">Proudly Underwritten By</h2>
         <v-row class="d-flex justify-center">
-            <v-col cols="6" sm="6" md="3" lg="3" xl="3" v-for=" card in cards" :key="card.id">
-                <v-img :src="card.img" class="rounded outlined"/>
+            <v-col cols="6" sm="6" md="3" lg="3" xl="3" v-for=" card in cards" :key="card.id" class="my-5">
+                <v-img :src="card.img" height="100" class="img"/>
             </v-col>
         </v-row>
     </v-container>
@@ -44,6 +44,11 @@ export default {
 </script>
 
 <style scoped>
+.img{
+    border:1px solid green;
+    padding:5px;
+    border-radius: 10px;
+}
 /* h2 {
     display: flex;
     justify-content: center;

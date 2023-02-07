@@ -1,32 +1,21 @@
 <template>
 <div class="reviews">
     <v-container>
-        <h2>Google Reviews</h2>
-        <div class="box"  >
-            <ReviewCard  :cards="cards"/>
-            <!-- <v-card  v-for="card in cards" :key="card.id" elevation="4" class="pa-2 mx-2" rounded="lg" width="300">
-                <v-card-text class="pa-0" >
-                    <v-list class="d-flex justify-space-around">
-                        <v-list-item-avatar size="42" color="red" class="d-flex justify-center">
-                            <v-img src="@/assets/logo.png" />
-                        </v-list-item-avatar>
-                        <v-list-item-content>
-                            <v-list-item-title class="text-body-1">{{card.name}}</v-list-item-title>
-                            <v-list-item-subtitle class="text-body-2">{{card.sub}}</v-list-item-subtitle>
-                        </v-list-item-content>
-                    </v-list>
-                </v-card-text>
-                <v-card-text class="pa-1 text-body-2 text-justify">
-                    {{card.text}}
-                </v-card-text>
-            </v-card> -->
-        </div>
+        <h2 class="text-h6 font-weight-bold">Client Reviews</h2>
+        <v-row class="d-flex justify-center">
+            <v-col cols="12" sm="12" md="10" lg="10" xl="10">
+                <TheSwiper  :cards="cards"/>
+            </v-col>
+        </v-row>
+        <!-- <div class="box"  >
+          
+        </div> -->
     </v-container>
 </div>
 </template>
 
 <script>
-import ReviewCard from '@/components/ReviewCard.vue';
+import TheSwiper from '@/components/TheSwiper.vue';
 
 export default {
     name: 'reviews',
@@ -34,27 +23,51 @@ export default {
         return {
             cards: [{
                     id: 1,
-                    name: 'name',
+                    name: 'Jone',
                     sub: 'subtitle',
-                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum omnis perspiciatis assumenda doloribus quod tempore officiis. Dolor laudantium fugiat architecto aperiam eaque adipisci. Magnam porro eveniet corporis!'
+                    img:'https://img.lovepik.com/element/40028/0241.png_300.png',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum  '
                 },
                 {
                     id: 2,
                     name: 'name',
                     sub: 'subtitle',
-                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum omnis perspiciatis assumenda doloribus quod tempore officiis. Dolor laudantium fugiat architecto aperiam eaque adipisci. Magnam porro eveniet corporis!'
+                    img:'https://www.pngall.com/wp-content/uploads/8/Young-Man-PNG-Free-Image.png',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum '
                 },
                 {
                     id: 3,
                     name: 'name',
                     sub: 'subtitle',
-                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum omnis perspiciatis assumenda doloribus quod tempore officiis. Dolor laudantium fugiat architecto aperiam eaque adipisci. Magnam porro eveniet corporis!'
+                    img:'https://w7.pngwing.com/pngs/229/266/png-transparent-management-consultant-businessperson-idea-project-young-men-and-women-miscellaneous-association-recruiter.png',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum  '
+                },
+                {
+                    id: 4,
+                    name: 'name',
+                    sub: 'subtitle',
+                    img:'https://img.lovepik.com/free-png/20211225/lovepik-young-business-women-png-image_400317477_wh300.png',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum  '
+                },
+                {
+                    id: 5,
+                    name: 'name',
+                    sub: 'subtitle',
+                    img:'https://www.pngmart.com/files/15/Business-Woman-PNG-Photos.png',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum  '
+                },
+                {
+                    id: 6,
+                    name: 'name',
+                    sub: 'subtitle',
+                    img:'https://purepng.com/public/uploads/large/purepng.com-manmanadult-malemale-childboy-beingmens-1421526920869cscbo.png',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nihil numquam rerum  '
                 },
             ]
         }
     },
     components:{
-        ReviewCard
+        TheSwiper
     }
 }
 </script>

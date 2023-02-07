@@ -1,10 +1,10 @@
 <template>
 <div class="news-letter">
     <v-container class="my-3">
-        <h2>NewsLetters login</h2>
-        <div class="box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime reprehenderit a, repudiandae architecto repellat doloremque obcaecati aliquam eaque! Natus?</p>
-        </div>
+        <h2 class="text-h6 font-weight-bold">NewsLetters</h2>
+
+        <p class="text-body-2 d-flex justify-center mt-n2">Enter your email for connectin with us</p>
+
         <div class="form">
             <div class="box2">
                 <v-text-field v-model="text" outlined dense hide-details />
@@ -15,6 +15,16 @@
     </v-container>
 </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            text: ''
+        }
+    }
+}
+</script>
 
 <style scoped>
 h2 {
@@ -65,9 +75,10 @@ h2 {
         width: 70%;
         margin-top: 5px;
     }
-     .form .box2 .btn{
+
+    .form .box2 .btn {
         margin-left: 30%;
         padding: 5px;
-     }
+    }
 }
 </style>

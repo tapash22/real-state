@@ -11,10 +11,13 @@
             </v-card> -->
         </div>
     </v-container>
+    <TheSwiper />
 </div>
 </template>
 
 <script>
+import TheSwiper from '@/components/TheSwiper.vue';
+
 export default {
     name: 'project',
     data() {
@@ -46,6 +49,10 @@ export default {
                 },
             ]
         }
+    },
+
+    components:{
+        TheSwiper
     }
 }
 </script>

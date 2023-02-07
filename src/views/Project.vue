@@ -1,22 +1,20 @@
 <template>
 <div class="project">
     <v-container class="my-2">
-        <h2>Blockfox Shorts</h2>
-        <div class="box">
-            <div class="image" v-for="card in cards " :key="card.id">
-                <v-img :src="card.image" class="rounded-xl img" />
-            </div>
-            <!-- <v-card elevation="0">
-              
-            </v-card> -->
-        </div>
+        <h2 class="text-h6 font-weight-bold">Blockfox Shorts</h2>
+        <v-row class="d-flex justify-center">
+            <v-col cols="12" sm="12" md="10" lg="10" xl="10">
+                <TheSwiper2 :cards="cards" />
+            </v-col>
+        </v-row>
+ 
     </v-container>
     <TheSwiper />
 </div>
 </template>
 
 <script>
-import TheSwiper from '@/components/TheSwiper.vue';
+import TheSwiper2 from '@/components/TheSwiper2.vue';
 
 export default {
     name: 'project',
@@ -47,12 +45,37 @@ export default {
                     image: 'https://images.unsplash.com/uploads/14123892966835548e7bd/14369636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
                     name: 'this'
                 },
+                {
+                    id: 6,
+                    image: 'https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=479&q=80',
+                    name: 'this'
+                },
+                {
+                    id: 7,
+                    image: 'https://images.unsplash.com/photo-1527335988388-b40ee248d80c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+                    name: 'this'
+                },
+                {
+                    id: 8,
+                    image: 'https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=479&q=80',
+                    name: 'this'
+                },
+                {
+                    id: 9,
+                    image: 'https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
+                    name: 'this'
+                },
+                {
+                    id: 10,
+                    image: 'https://images.unsplash.com/uploads/14123892966835548e7bd/14369636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+                    name: 'this'
+                },
             ]
         }
     },
 
     components:{
-        TheSwiper
+        TheSwiper2
     }
 }
 </script>

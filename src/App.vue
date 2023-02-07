@@ -8,7 +8,6 @@
       <Reviews />
       <News />
       <TheFooter />
-      <!-- <router-view/> -->
     </v-main>
   </v-app>
 </template>

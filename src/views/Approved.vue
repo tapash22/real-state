@@ -1,11 +1,14 @@
 <template>
 <div class="approved">
-    <h2>Proudly Underwritten By</h2>
-    <div class="box">
-        <div class="card" v-for="card in cards" :key="card.id">
-            <img :src="card.img" />
-        </div>
-    </div>
+    <v-container >
+        <h2 class="text-h6 font-weight-bold d-flex justify-center">Proudly Underwritten By</h2>
+        <v-row class="d-flex justify-center">
+            <v-col cols="6" sm="6" md="3" lg="3" xl="3" v-for=" card in cards" :key="card.id">
+                <v-img :src="card.img" class="rounded outlined"/>
+            </v-col>
+        </v-row>
+    </v-container>
+
 </div>
 </template>
 
@@ -41,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-h2 {
+/* h2 {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
@@ -82,5 +85,5 @@ h2 {
         display: flex;
         justify-content: center;
     }
-}
+} */
 </style>
